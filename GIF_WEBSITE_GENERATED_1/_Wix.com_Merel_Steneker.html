@@ -1,0 +1,69 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+        function pageScroll() {
+            var body = document.querySelector('body');
+            window.scrollBy(0,1);
+            scrolldelay = setTimeout('pageScroll()', 100)
+        }
+        pageScroll()
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+   
+</style>
+	
+</head>
+<body>
+
+<h1> Wix.com</h1>
+<p class="titles">The Good</p>
+<div class="content">Very simple tool to build websites for you based on a questionnaire on your preferences</div>
+<p class="titles">The Bad</p>
+<div class="content">The tool is very slow with processing uploads of files and multiple times I encountered with errors that I couldn't resolve. Wix.com is very limited for people with some experience in coding, where it fails to provide coding options. It feels more focussed on clients outside of the design practice with no experience in coding</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Not very fit for designers with even minimal coding experience and too slow for proper functioning and usability.</div>
+<p class="titles">Rating</p>
+<div class="content">[2]</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Merel Steneker</p>
+
+<br>
+<br>
+
+</body>
+</html>

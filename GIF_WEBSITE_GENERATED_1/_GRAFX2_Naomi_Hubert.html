@@ -1,0 +1,75 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> GRAFX2</h1>
+<p class="titles">The Good</p>
+<div class="content">It’s easy to learn, there are many possibilities. At first you might feel it’s a ‘paint-like’ programme, but after trying it for a bit it doesn’t give the paint-vibe of “whatever I might do right now it will turn ugly and very child like”  There are nice brushes and possibilities of making your own brushes, gradients and color flows. There’s the possibility of creating multiple layers that you can work in which also enriches the possibility of outcome.</div>
+<p class="titles">The Bad</p>
+<div class="content">At first it might seem like there are many buttons from which you don’t really know what they’re about or what they do exactly. When you hoover over, it does give you the function title of the key, but this can stay quite descriptive. The help menu just gives you the keyboard shortcuts, which is definitely handy, but might not be the only thing your looking for. In that sense. the ‘paint-like-vibe’ might make you give up straight away, "oh amateur programme… can’t figure it out too quickly, forget it", which would be a shame as it’s a lot of fun!</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Don’t feel discouraged by a little tutorial watching before heading back to GRAFX2, it’s worth it. You’ll stick to a certain look as outcome—> 8bit, pixelated design, but I’ve seen examples of even great paintings made in this programme. When you figure it out I’m sure there are some nice possibilities of design that can be quite individual looking</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+4</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Naomi Hubert</p>
+
+<br>
+<br>
+
+</body>
+</html>

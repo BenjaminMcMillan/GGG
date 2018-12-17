@@ -1,0 +1,69 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+        function pageScroll() {
+            var body = document.querySelector('body');
+            window.scrollBy(0,1);
+            scrolldelay = setTimeout('pageScroll()', 100)
+        }
+        pageScroll()
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+   
+</style>
+	
+</head>
+<body>
+
+<h1> OBS</h1>
+<p class="titles">The Good</p>
+<div class="content">Very useful tool for designing some interface for your livestream. You are able to add filters, text, images, videos, etc. These will appear as a sort of layer on top of your camera input. You can also connect the software to streaming platforms, so you are able to stream the design directly to your livestream.</div>
+<p class="titles">The Bad</p>
+<div class="content">Very difficult interface. Not very practical. You really have to become familiar with the different functions inside this program to be able to use it efficiently.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Free and open source software for video recording and live streaming.</div>
+<p class="titles">Rating</p>
+<div class="content">4,5</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Femke Jurrissen</p>
+
+<br>
+<br>
+
+</body>
+</html>

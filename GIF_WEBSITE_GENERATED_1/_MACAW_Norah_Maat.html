@@ -1,0 +1,74 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> MACAW</h1>
+<p class="titles">The Good</p>
+<div class="content">The program is very similar to the Adobe programs. Elements can snap to the grid lines in order to keep everything clean. It simplified many aspect of CSS styling. The controls are easy to understand and adjust. Macaw also provides a preview feature. </div>
+<p class="titles">The Bad</p>
+<div class="content">Everytime you open the program it gives you a new blank file. Online documentation is hard to find and some features are confusing. The features the program offers are very basic and so are the font choices that are very similar to each other.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Macaw offers are simplified version of CSS styling and HTML making. It can be a great tool for laying a fast basic foundation for a website that you can later on alter in another coding program to add your own style.</div>
+<p class="titles">Rating</p>
+<div class="content">[3.5]</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Norah Maat</p>
+
+<br>
+<br>
+
+</body>
+</html>

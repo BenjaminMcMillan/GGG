@@ -1,0 +1,69 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+        function pageScroll() {
+            var body = document.querySelector('body');
+            window.scrollBy(0,1);
+            scrolldelay = setTimeout('pageScroll()', 100)
+        }
+        pageScroll()
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+   
+</style>
+	
+</head>
+<body>
+
+<h1> Blender</h1>
+<p class="titles">The Good</p>
+<div class="content">There are a lot of options to have fun with. It's a completely free tool for 3D modeling, rendering and a lot of other cool stuff.</div>
+<p class="titles">The Bad</p>
+<div class="content">It takes a long time to learn as a beginner. Looks complicated.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Professional paid 3D programs will give you more options and higher level of work. The interface is quite hard to understand and to get used to. If you do not take the time to learn it you get frustrated easliy since it does not provide explanation on where to begin. </div>
+<p class="titles">Rating</p>
+<div class="content">[3]</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Norah Maat</p>
+
+<br>
+<br>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Vectr</h1>
+<p class="titles">The Good</p>
+<div class="content">The software is internet based so you can access your files wherever you are. It's easy to use and functions very well. It's a good alternative for paid vector software. </div>
+<p class="titles">The Bad</p>
+<div class="content">It must have an internet connection or the software doesn't work. Sometimes the software is slow. </div>
+<p class="titles">The Bottom Line</p>
+<div class="content">The internet plays a big role in this tool. It all depends on that. You can't access your files if you don't have internet. </div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Norah Maat</p>
+
+<br>
+<br>
+
+</body>
+</html>

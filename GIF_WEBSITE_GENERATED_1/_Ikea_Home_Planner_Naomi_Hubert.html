@@ -1,0 +1,71 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+        function pageScroll() {
+            var body = document.querySelector('body');
+            window.scrollBy(0,1);
+            scrolldelay = setTimeout('pageScroll()', 100)
+        }
+        pageScroll()
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+   
+</style>
+	
+</head>
+<body>
+
+<h1> Ikea Home Planner</h1>
+<p class="titles">The Good</p>
+<div class="content">It's a clear and simple application for testing Ikea products within a rendering of one's home, or a rendering that closely resembles. A profile is recommended, but not required to use the software. Templates include options like "room shape and size" to allow users to match the layout of their own home.</div>
+<p class="titles">The Bad</p>
+<div class="content">Installation for an internet plug-in is required. The internet-based program is quite slow in terms of response time. I tried using the app in both chrome and safari, both times it froze.
+
+It is possible to make print-outs, but in order to email or save the file you need an account. Files that are "saved" are saved to the Ikea server, "Your design has now been saved and it will remain on our server for 365 days. You can open your saved design from the FILE menu in the planner, or bring your user name and password to an IKEA store and open it there." Similarly, files that are emailed are sent from the application itself.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">The tool is most useful for those planning to buy Ikea products for their home. The application is extremely slow in terms of responsiveness. The application could also be used to get a very limited introduction to 3D rendering. The limitations on access to the software including the downloading files and editing of the program makes it's functionality quite limited.</div>
+<p class="titles">Rating</p>
+<div class="content">3</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Naomi Hubert</p>
+
+<br>
+<br>
+
+</body>
+</html>

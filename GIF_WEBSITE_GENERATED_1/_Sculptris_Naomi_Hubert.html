@@ -1,0 +1,83 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Sculptris</h1>
+<p class="titles">The Good</p>
+<div class="content">1. There’s a explanation on keys immediately on the right, also every button states  in the interface says what it’s for
+2. Symmetry mode, if you have a symmetrical sculpture, you just need to create one side.
+3. When Sculptris froze and I had to restart the program it was still where I left it, so luckily didn’t need to start from stratch again!</div>
+<p class="titles">The Bad</p>
+<div class="content">1. The interface (probably as it’s free) looks quite pixelated
+
+2. There is a small introduction on keys on the bottom right, but that’s about it.
+	-- this means you kind of end up pressing all            buttons to figure out what it exactly does       (or you can watch a youtube tutorial)
+	- It does state ‘read more in the documentation’
+	  but not where to find this</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">It’s hard!!!!!!! It might be a handy programme when you are already quite skilled in these type of sculpting programmes, but it definitely has a hard learning curve. Some of the keys are too sensitive and it’s hard to work very precise. Trying to find the documentation is hard and it seems that Z-Brush is actually the newer, better version of Sculptris. There is way more advertising for this programme than Sculptris actually has, although it’s weird that they don’t really talk about the differences of Z-Brush and Sculptris, which one is better- the way to do it.</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+
+3</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Naomi Hubert</p>
+
+<br>
+<br>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Tinkercad</h1>
+<p class="titles">The Good</p>
+<div class="content">The interface is really easy to use allowing the user to do a huge range of posibilities without any effort. The program is quite simple, you just need a few days to get used to tinkercad. It provides STL files which can work with a 3D printing slicer program. The tutorial is really good to get started in tinkercad.  The fact that it's entirely online means there's no software to license or install.</div>
+<p class="titles">The Bad</p>
+<div class="content">Sometimes it can be difficult to follow the dimensions. However, once you get used to the program it becomes a lot easier. While the program is fairly intuitive, this is one area that takes a little practice. There are limits to what you can design with this program however. Because this program uses geometric shapes, it can be difficult to get really creative because you can’t really draw freeform shapes to exactly what you want to draw. You have to understand how to do it within the provided forms and limitations of the software. It doesn’t work offline.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Tinkercad provides a pleasant way of creating beautiful 3D models and designs right inside your browser which is suitable for any age group. Enjoy many features and a large community in this complete experience.</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+4</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Nicole Jansen</p>
+
+<br>
+<br>
+
+</body>
+</html>

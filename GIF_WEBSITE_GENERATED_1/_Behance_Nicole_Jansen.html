@@ -1,0 +1,82 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Behance</h1>
+<p class="titles">The Good</p>
+<div class="content">1. You will get to hang out with the best creative people in the city. For one whole week you will get to rub elbows with them, share ideas, and also learn some tricks of the trade from them.
+2.  You're works will be reviewed by experienced professionals.
+3. You will get the chance to present your works to a group of people whom you can be pretty sure knows what you are talking about.
+4. You and your artworks will finally get the recognition (or exposure) that they deserve.
+5. Lastly, being short-listed on this event will look pretty nice on your resume, which means more awesome opportunities for you in the future.
+And you know pretty well that these are not just the things that you will get out of this if you get the chance to participate in this event. This is a really great opportunity for you to grow as a creative.
+Free membership, Jobs at top companies, Creative branding, Appearance and style, Global reach, Educational resources, Mobile app. Showcase and discover the latest work from top online portfolios by creative professionals across industries: build your portfolio page with worldwide viewers.</div>
+<p class="titles">The Bad</p>
+<div class="content">Difficulty finding freelance jobs, Projects don't shine unless you use ProSite, No safety information or dispute resolution, No ratings for companies. Sometimes hard to get views on your work unless featured or actively liking other projects.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Behance offers an attractive, interactive way for creative professionals to post their work, search for customers, and apply for jobs. With its large membership and active jobs board, Behance is an excellent place for creatives to get their work noticed. Freelancers who search for jobs on Behance should be aware that the company does not involve itself in negotiations between the freelancers and the companies posting the jobs or assist with dispute resolution.
+This site is a way for Adobe Systems to market its products, so they want you to use ProSite to create your projects. If you have a lot of visual creative work to share, paying the monthly fee to post your ProSite projects may be a good choice to get your work viewed by Adobe and the creative community. If you don't want to spend the money to post your projects with ProSite, you can post them for free, but with limited design functionality.</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+4</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Nicole Jansen</p>
+
+<br>
+<br>
+
+</body>
+</html>

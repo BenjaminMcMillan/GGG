@@ -1,0 +1,85 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Youidraw</h1>
+<p class="titles">The Good</p>
+<div class="content">YouiDraw is a web app designed to help you create beautiful art revolved around the use of vector graphics. It provides the necessary tools to turn your imagination into reality, such as a fully fledged editor and many sharing capabilities.
+
+The drawing tool lets you create vector designs easily. Kickstart your project by choosing from hundreds of templates available at your disposal, ranging from buttons and banners to t-shirts and gift cards.
+
+After choosing a template, start editing it to your liking. On the left side, you can find many tools which you can use to draw shapes, add text or change elements. On the top part, you can access different functions that let you combine and adjust separate components, as well as features such as an interactive grid and layer interaction.
+
+Create logos inside the logo editor. It provides the same level of functionality as the drawing one, but additionally, you have a large template and shape library at your disposal from which you can get different kinds of icons to use for your creation, as well as other specific tools.
+
+The painting editor lets you express your ideas freely in a clean environment. The minimalistic design of the editor, along with tools such as Crayon and Brush, each with multiple effects make your creations come to life.
+
+After you finish your work, export it as a PNG, JPEG or SVG, or download it as a .YLC file, the same format that the editor uses so you can edit it later.</div>
+<p class="titles">The Bad</p>
+<div class="content">It looks like paint, or Word art, it's not complicated but that also says what the programm is about, basic tools to make basic shapes and childish drawings</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">YouiDraw is a complete package that provides many handy tools which help you create stunning drawings, beautiful logos, and passionate paintings. The app grants a great solution to your needs,  whether you are an amateur designer or a professional.</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+3</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Nicole Jansen</p>
+
+<br>
+<br>
+
+</body>
+</html>

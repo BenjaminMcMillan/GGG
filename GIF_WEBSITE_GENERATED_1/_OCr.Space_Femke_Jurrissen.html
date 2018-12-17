@@ -1,0 +1,71 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+        function pageScroll() {
+            var body = document.querySelector('body');
+            window.scrollBy(0,1);
+            scrolldelay = setTimeout('pageScroll()', 100)
+        }
+        pageScroll()
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+   
+</style>
+	
+</head>
+<body>
+
+<h1> OCr.Space</h1>
+<p class="titles">The Good</p>
+<div class="content">Easily convert img to txt. Recognizes automatically text.</div>
+<p class="titles">The Bad</p>
+<div class="content">- Machine is not always reading well
+- breaking lines exactly the way as in the image, so weird sentences.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Nice online software useful when u want your photographed pages of books to be converted in text again.</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+3,8</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Femke Jurrissen</p>
+
+<br>
+<br>
+
+</body>
+</html>

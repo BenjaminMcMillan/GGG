@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> FontStruct</h1>
+<p class="titles">The Good</p>
+<div class="content">Basic language, easy to learn point and click layout and way of working. Doesn't require knowledge of computers skills. FontStruct has a special export function which allows you to save your FontStructions in Glyphs format. This is useful for advanced typography (kerning, OpenType features) which is currently not available in FontStruct. Each 'brick' will be exported seperatly and are all editable. Every font has his own comment page to share your opinions with each other.  
+ </div>
+<p class="titles">The Bad</p>
+<div class="content">No right mouse click option. Limited shapes. Might be a harder software for fonts that needs to be flued since it's created through pixels. </div>
+<p class="titles">The Bottom Line</p>
+<div class="content">It's a great way to experiment with font making and talking about it. Eventhough the options are limited they are honest about this. They promote buying fonts on MyFonts.com. </div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+4</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Norah Maat</p>
+
+<br>
+<br>
+
+</body>
+</html>

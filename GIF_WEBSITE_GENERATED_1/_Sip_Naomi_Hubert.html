@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Sip</h1>
+<p class="titles">The Good</p>
+<div class="content">It’s nice that you can pick a color from any pixel that you can find on your screen with some sort of magnifier. It saves the color immediately in your history and you can create palettes’, also you can set in what type of color code you want to receive this specific color, css hex f.e. or openGL, javaRGB f.e. there are many. There’s a size and zoom on the magnifier and, the amount of colors you want to pick, many settings to change to make sure you get the right color.
+What is veeeery nice tho is that when you’ve picked your color, it’s automatically saved on your clipboard, so when you ‘paste’ it’s the code of the color. Which is very handy.</div>
+<p class="titles">The Bad</p>
+<div class="content">The fact that you have to pay 10$, it’s only once so it’s not too expensive, but I think there are more ways to pick a specific color from screen that are free. I don’t feel like personally I need this app THAT bad to find specific colors, I can also use photoshop. And not really interested in sharing them too.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">It just depends per person how many times you feel like finding out which color has been used. This app is very simple and just does exactly what you want it to do, which is great. Nothing more, nothing less. I don’t like the fact that you have to pay, but hey, they also made the app and need to make some $$ which is understandable.</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+4</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Naomi Hubert</p>
+
+<br>
+<br>
+
+</body>
+</html>

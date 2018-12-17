@@ -1,0 +1,74 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Wix.com</h1>
+<p class="titles">The Good</p>
+<div class="content">It is very easy to use and you don’t need to have coding skills to create your website. You can choose for a standard template, you can choose and asjust a template to your own liking and you can create a template by using one of the many design options. Another handy thing about wix.com is that you can find many tutorials on youtube.</div>
+<p class="titles">The Bad</p>
+<div class="content">When using the free version, you find sentence “Proudly created with Wix.com “ in the footer of your site. It opens many new tabs.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Great tool for creating a site without having to spent hours on it. Only downside is the price. You kind of need to pay a lot if you want all the optional options.</div>
+<p class="titles">Rating</p>
+<div class="content">4</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by RyanneJoy</p>
+
+<br>
+<br>
+
+</body>
+</html>

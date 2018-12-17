@@ -1,0 +1,74 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Audacity</h1>
+<p class="titles">The Good</p>
+<div class="content">Really easy to use for quick audio sketches without the need to go to the AV studio for equipment. All useable for both Mac and Windows which makes filesharing easier.</div>
+<p class="titles">The Bad</p>
+<div class="content">The interface is not user friendly and feels crowded. Working in the application it stays hard to keep things organised.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">Useful for small experiments but becomes insufficient when working in bigger projects or files.</div>
+<p class="titles">Rating</p>
+<div class="content">[3]</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Merel Steneker</p>
+
+<br>
+<br>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> Coolors</h1>
+<p class="titles">The Good</p>
+<div class="content">This software is made to design a 5 color palette according to your own preference. The process is very simple. By pressing the space bar the colors change and you can block colors and define them by the options Coolors provides. There are infinite combinations of colors and tones. The combinations that you created can be exported and shared in the library. 
+There is also a option for different forms of color blindness. This way you can see colors that only people with this form of blindness can see. </div>
+<p class="titles">The Bad</p>
+<div class="content">The application has very few options to generate combinations, only allows you to create basic color combinations of 5 color ranges.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">This tool is not only for graphic designer but also for photographers, illustrators, set designers, fashion designers etc.</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Norah Maat</p>
+
+<br>
+<br>
+
+</body>
+</html>

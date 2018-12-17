@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> BeFunky</h1>
+<p class="titles">The Good</p>
+<div class="content"> Photo editor, collage maker, designer. You can upload photos from different platforms. It is a fairly clear software and it is easy to learn where everything can be found.</div>
+<p class="titles">The Bad</p>
+<div class="content">The basic supplies are free -let’s say the necessary options-
+until you want something more special and you have to pay for it, without having a subscription. If you want higher resolution images output and just extra options, like filters and edit filters, you have to pay 3 dollars a month.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">If you want to edit your photos quickly and without any effort, such as learning Photoshop, for example, this is the perfect ‘start’ program. It is simple and usable for everyone. With this web software you can quickly and easily perform fun tests on your photo or even design your own collage and menu cards.</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+3</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Nicole Jansen</p>
+
+<br>
+<br>
+
+</body>
+</html>

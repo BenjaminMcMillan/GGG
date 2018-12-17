@@ -1,0 +1,75 @@
+
+<html>
+<head>
+    <script type="text/javascript">
+    var scrollDirection = 1;
+    function pageScroll() {
+      window.scrollBy(0,scrollDirection); // horizontal and vertical scroll increments
+      scrolldelay = setTimeout('pageScroll()',50); // scrolls every 100 milliseconds
+      if ( (window.scrollY === 0) || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollDirection = -1*scrollDirection;
+      }
+  }
+  pageScroll();
+
+        // document.body.scrollTop = document.documentElement.scrollTop = 0;
+    </script>
+	<style type="text/css">
+		@font-face {
+    font-family: "Academica";
+    src: url("font/Academica-Regular.woff") format('woff');
+}
+
+    body {
+    	font-family: Academica;
+        overflow:hidden;
+
+    }
+
+    .titles {
+    	font-size: 8vw;
+    	margin-bottom: 0;
+    	/*text-decoration: underline;*/
+    }
+
+    .content {
+    	font-size: 5vw;
+    	margin-bottom: 0;
+    }
+
+    h1 {
+    	font-size: 10vw;
+    	text-decoration: underline;
+    	color: #202020;
+    }
+   p,div {
+    	color: #202020;
+    }
+#name {
+	text-align: right;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1> SketchUp Make 2017</h1>
+<p class="titles">The Good</p>
+<div class="content">SketchUp is  a 3D modeling software that's easy to learn and incredibly fun to use, useful from the earliest stages of design to the end of construction. Programming, diagramming, design development, detailing, documentation, RFIs-wherever you need drawings, SketchUp pro comes in handy. Find a 3D model of anything necessary for your design work, turn models you have created into documents and customize your own add on tools to take away 3D modeling issues that may occur in other programs.You can quickly create visualizations in Sketchup. The basic tools are good enough to build the basis. Good program for beginners to get the hang of it. It is simple and usable for everyone. You can also make videos of the object you made here. You can find many tutorials on YouTube.</div>
+<p class="titles">The Bad</p>
+<div class="content">You can not make it seem realistic without plug-ins, these plug-ins are not free or you have to get them illegally. You do not use all the tools without paying.</div>
+<p class="titles">The Bottom Line</p>
+<div class="content">pay for tools and plug-ins for improvement of the program</div>
+<p class="titles">Rating</p>
+<div class="content">[ANSWER WITH NUMBER 15]
+4</div>
+<!-- <p class="titles">Version</p>
+<div class="content"></div> -->
+<p id="name" class="content" class="titles">Reviewed by Nicole Jansen</p>
+
+<br>
+<br>
+
+</body>
+</html>
